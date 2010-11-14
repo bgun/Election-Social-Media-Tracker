@@ -1,0 +1,247 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #A1A3A5;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Arial, sans-serif;
+	font-size: 14px;
+}
+
+a {
+	color: #666;
+}
+a:hover {
+	color: #D00;
+}
+
+h1 {
+	display: block;
+	float: right;
+	font-family: Georgia, serif;
+	font-size: 32px;
+	font-weight: normal;
+	letter-spacing: -1px;
+	padding: 10px;
+	text-align: right;
+	width: 280px;
+}
+h3.racetype {
+	color: #008;
+	font-family: Georgia, serif;
+	font-size: 23px;
+	font-weight: normal;
+	letter-spacing: -1px;
+	margin-bottom: 30px;
+	padding: 10px;
+	text-align: right;
+}
+
+
+#wrapper {
+	margin: 0 auto;
+	width: 960px;
+}
+
+#header {
+	background: #333;
+	background-image: url("./images/header-bg.png");
+	height: 45px;
+	width: 100%;
+}
+#header ul {
+	margin: 0 auto;
+	padding-left: 320px;
+	width: 640px;
+}
+#header ul li {
+	float: left;
+	height: 40px;
+	list-style: none;
+	padding-top: 5px;
+	width: 150px;
+}
+#header ul li a {
+	background: #666;
+	border-radius: 10px 10px 0 0;
+	-moz-border-radius: 10px 10px 0 0;
+	color: #FFF;
+	display: block;
+	font-family: Georgia, serif;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 40px;
+	margin-right: 5px;
+	text-align: center;
+	text-decoration: none;
+}
+#header ul li a:hover {
+	background: #CCC;
+}
+#header ul li a.active {
+	background: #FFF;
+	color: #666;
+}
+
+#column-left {
+	background: #FFF;
+	border-radius: 0 0 0 30px;
+	-moz-border-radius: 0 0 0 30px;
+	float: left;
+	padding-bottom: 50px;
+	width: 320px;
+}
+#column-left .pad {
+	padding: 10px 0 10px 20px;
+}
+#column-left p {
+	font-size: 12px;
+	margin: 1em 0;
+	padding: 20px 10px 0px 70px;
+	text-align: right;
+}
+#column-left small { font-size: 9px; }
+
+#column-left .credits p {
+	margin: 0;
+	padding: 40px 10px 0 10px;
+	text-align: right;
+}
+
+#change-predictor {
+	margin: 0 auto;
+	text-align: center;
+}
+#change-predictor li {
+	float: left;
+	list-style: none;
+}
+#change-predictor li a {
+	background: #BBB;
+	background-image: url("./images/check-off.png");
+	background-position: 2px 3px;
+	background-repeat: no-repeat;
+	border-radius: 10px 10px 0 0;
+	-moz-border-radius: 10px 10px 0 0;
+	color: #FFF;
+	display: block;
+	font-size: 11px;
+	line-height: 35px;
+	margin-right: 3px;
+	padding-left: 37px;
+	text-align: left;
+	text-decoration: none;
+	width: 61px;
+}
+#change-predictor li a.facebook { margin-right: 0; }
+#change-predictor li a:hover {
+	background-color: #D00;
+	color: #FFF;
+}
+#change-predictor li a.active {
+	background-color: #666;
+	background-image: url("./images/check.png");
+}
+
+
+#stats {
+	background: #DDD;
+	border: 5px solid #666;
+	clear: both;
+}
+#stats { font-family: Georgia, serif; }
+#stats .stats-won { font-size: 20px; line-height: 40px; }
+#stats #number-of-races { font-size: 14px; }
+#stats .stats-won-R { color: #D00; }
+#stats .stats-won-D { color: #00D; }
+#stats .stats-won-I { color: #666; }
+#stats .stats-won span { font-size: 64px; }
+#stats p { font-family: Georgia, serif; font-size: 17px; padding: 0; text-align: left; }
+#stats .accuracy { font-size: 17px; margin: 1em; padding: 0; text-align: right; }
+#stats .accuracy span { font-weight: bold; }
+
+#column-right {
+	background: #FFF;
+	float: right;
+	width: 640px;
+}
+#column-right .pad {
+	padding: 10px;
+}
+#column-right p {
+	font-size: 12px;
+	padding: 10px;
+	text-align: center;
+}
+div.race {
+	background: #E8E8E8;
+	border-radius: 10px 0 0 10px;
+	-moz-border-radius: 10px 0 0 10px;
+	margin: 10px;
+	padding: 10px 0;
+}
+div.race h2 {
+	float: left;
+	font-size: 14px;
+	margin: 5px auto;
+	overflow: hidden;
+	padding: 0 10px;
+	text-align: right;
+	width: 110px;
+}
+div.race table {
+	background: #FFF;
+	border: 5px solid #BBB;
+	border-collapse: collapse;
+}
+div.race table th {
+	background: #BBB;
+	color: #000;
+	cursor: pointer;
+	font-size: 10px;
+	padding: 2px 0;
+	text-align: center;
+}
+div.race table td {
+	font-size: 11px;
+	padding: 3px 0;
+	text-align: center;
+}
+div.race table tr.pick td.full-name {
+	background-image: url("./images/star.png");
+	background-position: 2px 5px;
+	background-repeat: no-repeat;
+}
+div.race table tr.winner-1 { background-color: #9F9; }
+div.race table tr.winner-1 td.full-name {
+	background-image: url("./images/check-win.png");
+	background-position: 1px 2px;
+	background-repeat: no-repeat;
+}
+div.race table tr.incumbent-1 td.full-name {
+	font-weight: bold;
+}
+div.race table tr td.full-name { width: 220px; font-size: 14px; }
+div.race table tr td.followers { width: 90px; }
+div.race table tr td.fans      { width: 70px; }
+div.race table tr td.total     { width: 80px; }
+
+div.race table tr.affiliation-R td.full-name { color: #D00; }
+div.race table tr.affiliation-D td.full-name { color: #00D; }
+div.race table tr.affiliation-I td.full-name { color: #666; }
+div.race table tr.affiliation-G td.full-name { color: #0A0; }
+div.race table tr.affiliation-L td.full-name { color: #A0D; }
+
+div.race table th.headerSortUp,
+div.race table th.headerSortDown {
+	background-color: #666;
+	background-repeat: no-repeat;
+	background-position: 4px 7px;
+	color: #FFF;
+}
+div.race table th.headerSortUp   { background-image: url("./images/sort-arrow-up.png"); }
+div.race table th.headerSortDown { background-image: url("./images/sort-arrow-down.png"); }
+
+
+
